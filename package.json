@@ -1,0 +1,40 @@
+{
+  "name": "design-md-motion",
+  "version": "0.1.0",
+  "description": "A motion section for DESIGN.md with lint rules and a reference example, plus print and video surface profiles.",
+  "type": "module",
+  "bin": {
+    "design-md-motion": "bin/design-md-motion.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "SPEC.md",
+    "examples",
+    "docs"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "lint:examples": "node bin/design-md-motion.mjs lint examples/daylight-prestige.DESIGN.md examples/studio-print-video.DESIGN.md"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "yaml": "^2.7.1"
+  },
+  "keywords": [
+    "design.md",
+    "motion",
+    "design-tokens",
+    "prefers-reduced-motion",
+    "linter",
+    "coding-agents"
+  ],
+  "license": "MIT",
+  "author": "Rish Sadh (https://github.com/rishsadh)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rishsadh/design-md-motion.git"
+  }
+}
